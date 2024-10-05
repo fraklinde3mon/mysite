@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG with Alert</title>
+    <script>
+        function showAlert() {
+            alert(1);
+        }
+    </script>
+</head>
+<body>
+    <h1>SVG Example</h1>
+    <button onclick="showAlert()">Click me to alert 1</button>
+    
+    <svg width="200" height="100" xmlns="http://www.w3.org/2000/svg" style="border: 1px solid black;">
+        <text x="10" y="40" font-family="Arial" font-size="20" fill="black">RFI POC by mo9kha3k</text>
+    </svg>
+</body>
+</html>
