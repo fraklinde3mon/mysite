@@ -6,7 +6,7 @@
     <title>SVG with Alert</title>
     <script>
         function showAlert() {
-            alert("XSS by BHARAT");
+            alert("XSS by Me");
         }
     </script>
 </head>
