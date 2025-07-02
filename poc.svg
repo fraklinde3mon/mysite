@@ -1,6 +1,4 @@
-<?xml version="1.0"?>
-<svg xmlns="http://www.w3.org/2000/svg">
-  <script><![CDATA[
-    alert('XSS in SVG using script tag!');
-  ]]></script>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <use xlink:href="data:application/xml;base64 ,
+PHN2ZyBpZD0ndGVzdCcgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJyB4bWxuczp4bGluaz0naHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluaycgd2lkdGg9JzEwMCcgaGVpZ2h0PScxMDAnPgo8aW1hZ2UgaHJlZj0iMSIgb25lcnJvcj0iYWxlcnQoMSkiIC8+Cjwvc3ZnPg==#test"/>
 </svg>
