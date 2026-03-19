@@ -1,0 +1,9 @@
+{
+    "url": "https://usefoolsite.netlify.app/test.yaml",
+    "urls": [
+        {
+            "url": "https://usefoolsite.netlify.app/test.yaml",
+            "name": "Foo"
+        }
+    ]
+}
